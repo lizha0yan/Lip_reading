@@ -23,4 +23,25 @@ Then use OpenCV to crop the mouth area:
 
 ![](images/CroppedMouthArea.jpg)
 
-![](images/BlackandWhite.jpg)
+We need to convert the picture to black and white:
+
+![](images/BlackandWhite.png)
+
+
+The pixel values fall in the range of 0 to 255, we need to scale them to 0 to 1, the picture matrix example shows below:
+
+array([[ 0.34509804,  0.34901961,  0.34901961, ...,  0.3254902 ,
+         0.32941176,  0.33333333],
+       [ 0.28627451,  0.29019608,  0.29803922, ...,  0.32156863,
+         0.32941176,  0.32941176],
+       [ 0.29803922,  0.29411765,  0.30196078, ...,  0.32156863,
+         0.3254902 ,  0.3254902 ],
+       ..., 
+       [ 0.30588235,  0.30196078,  0.29803922, ...,  0.3254902 ,
+         0.32941176,  0.32941176],
+       [ 0.29803922,  0.29803922,  0.29803922, ...,  0.32156863,
+         0.32156863,  0.32156863],
+       [ 0.30980392,  0.31764706,  0.3254902 , ...,  0.3254902 ,
+         0.3254902 ,  0.3254902 ]])
+
+Then we can use the data to train our CNN model.
