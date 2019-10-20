@@ -23,4 +23,4 @@ Then use OpenCV to crop the mouth area:
 
 ![](images/CroppedMouthArea.jpg)
 
-
+![](images/BlackandWhite.jpg)
