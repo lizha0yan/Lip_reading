@@ -14,3 +14,13 @@ Use instruction:
 
 
 Notice: The accrucy is only 55%. You may need to get final results combining with audio model's results.
+
+The pictures extract from vedios look like this:
+
+![](images/picturefromVedio.jpg)
+
+Then use OpenCV to crop the mouth area:
+
+![](images/CroppedMouthArea.jpg)
+
+
